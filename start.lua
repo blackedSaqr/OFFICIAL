@@ -74,7 +74,7 @@ RunBot:write([[
 cd $HOME/BLACKBOTSS
 token="]]..database:get(Server_Done.."Token_Write")..[["
 rm -fr BLACKBOTSS.lua
-wget "https://raw.githubusercontent.com/BLACKBOTSS/BLACKBOTSS/master/BLACKBOTSS.lua"
+wget "https://raw.githubusercontent.com/blackedSaqr/OFFICIAL/main/BLACKBOTSS.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./BLACKBOTSS.lua -p PROFILE --bot=$token
