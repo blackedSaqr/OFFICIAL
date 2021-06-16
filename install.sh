@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd $HOME/BLACKBOTSS
+cd $HOME/OFFICIAL
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
@@ -10,7 +10,7 @@ chmod +x ts
 get() {
 rm -fr BLACKBOTSS.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/BLACKBOTSS/BLACKBOTSS/master/BLACKBOTSS.lua"
+wget "https://raw.githubusercontent.com/blackedSaqr/OFFICIAL/main/BLACKBOTSS.lua"
 lua start.lua
 }
 installall(){
@@ -48,7 +48,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd BLACKBOTSS
+cd OFFICIAL
 rm -rf luarocks*
 lua start.lua
 
