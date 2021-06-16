@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd $HOME/OFFICIAL
+cd $HOME/BLACKBOTSS
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
@@ -48,8 +48,6 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd OFFICIAL
+cd BLACKBOTSS
 rm -rf luarocks*
 lua start.lua
-
-
